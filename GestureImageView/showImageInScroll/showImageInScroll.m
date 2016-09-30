@@ -7,7 +7,6 @@
 //
 
 #import "showImageInScroll.h"
-#import "UIView+Additions.h"
 
 
 
@@ -15,7 +14,6 @@
 {
     BOOL  isshwo;
     UIImageView         *_imageView;
-//    BigImageRemove      _bigRemove;
     CGRect              oldframe;
     UIScrollView        *_scroll;
 }
@@ -113,12 +111,12 @@
 
 -(void)adjustFrame
 {
-    [_scroll setFrame:CGRectMake(0, 0, [UIView getScreenWidth], [UIView getScreenHeight])];
+    [_scroll setFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
     [_scroll setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.7]];
     // 基本尺寸参数
     
-    CGFloat boundsWidth =[UIView getScreenWidth];
-    CGFloat boundsHeight = [UIView getScreenHeight];
+    CGFloat boundsWidth =ScreenWidth;
+    CGFloat boundsHeight = ScreenHeight;
     
     CGSize imageSize = _imageView.image.size;
     CGFloat imageWidth = imageSize.width;

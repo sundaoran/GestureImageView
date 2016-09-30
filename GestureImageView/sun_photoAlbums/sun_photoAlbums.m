@@ -81,7 +81,6 @@
     }
     
     UIWindow *keyWindows=[UIApplication sharedApplication].keyWindow;
-//    keyWindows.windowLevel=1;
     [keyWindows addSubview:_bgView];
     _bgView.alpha=0;
     _bgView.frame=CGRectMake(0, 0, ScreenWidth, ScreenHeight);

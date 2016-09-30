@@ -103,7 +103,10 @@
 -(void)handleSingleTap:(UITapGestureRecognizer *)tapGest
 {
     NSLog(@"one");
-    _imageClick((UIImageView *)[tapGest view]);
+    if(_imageClick)
+    {
+        _imageClick((UIImageView *)[tapGest view]);
+    }
 }
 
 

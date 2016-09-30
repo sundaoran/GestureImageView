@@ -9,5 +9,6 @@
 #ifndef sun_photoHeader_h
 #define sun_photoHeader_h
 
+#import "sun_photoAlbums.h"
 
 #endif /* sun_photoHeader_h */

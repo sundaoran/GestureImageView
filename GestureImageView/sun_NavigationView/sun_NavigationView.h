@@ -6,13 +6,21 @@
 //  Copyright (c) 2015年 zzz. All rights reserved.
 //
 
+
+//获取设备的物理高度
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//获取设备的物理宽度
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
 #import <UIKit/UIKit.h>
+#import "NSString+Additions.h"
 
 typedef void (^leftBlockAction)();
 
 typedef void (^rightBlockAction)();
 
-@interface do_NavigationView : UIView
+@interface sun_NavigationView : UIView
 
 @property(nonatomic,strong)UIButton *leftActionView;
 @property(nonatomic,strong)UIButton *rightActionView;

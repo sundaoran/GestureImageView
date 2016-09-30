@@ -6,6 +6,12 @@
 //  Copyright (c) 2014年 sundaoran. All rights reserved.
 //
 
+//获取设备的物理高度
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//获取设备的物理宽度
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 

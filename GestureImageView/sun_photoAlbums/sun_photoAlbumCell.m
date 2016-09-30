@@ -6,6 +6,9 @@
 //  Copyright © 2016年 Wenyu. All rights reserved.
 //
 
+
+
+
 #import "sun_photoAlbumCell.h"
 #import <UIImageView+WebCache.h>
 
@@ -58,7 +61,7 @@
         
         _imageView=[[UIImageView alloc]initWithFrame:_scrollView.frame];
         _imageView.contentMode=UIViewContentModeScaleAspectFit;
-        _imageView.image=[UIImage imageNamed:@"nsm_logo"];
+        _imageView.image=[UIImage imageNamed:@"default"];
         [_scrollView addSubview:_imageView];
         
         _activityIndicatorView=[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
@@ -88,6 +91,10 @@
 
 -(void)adjustFrame
 {
+    if(!_imageView.image)
+    {
+        return;
+    }
     [_scrollView setFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
     // 基本尺寸参数
     

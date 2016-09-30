@@ -10,4 +10,6 @@
 
 @interface customCell : UICollectionViewCell
 
+@property(nonatomic,strong)NSString *imageUrl;
+
 @end

@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 zzz. All rights reserved.
 //
 
-#import "do_NavigationView.h"
+#import "sun_NavigationView.h"
 
-@implementation do_NavigationView
+@implementation sun_NavigationView
 {
     leftBlockAction  _tempLeftBlockAction;
     rightBlockAction _temprightBlockAction;
@@ -33,7 +33,7 @@
 //        }
 //        else
 //        {
-            self.backgroundColor=do_pinkColor;
+            self.backgroundColor=[UIColor purpleColor];
 //        }
         if(title)
         {
@@ -130,12 +130,18 @@
 }
 -(void)leftActionClick
 {
+    if(_tempLeftBlockAction)
+    {
     _tempLeftBlockAction();
+    }
 }
 
 -(void)rightActionClick
 {
+    if(_temprightBlockAction)
+    {
     _temprightBlockAction();
+    }
 }
 
 /*

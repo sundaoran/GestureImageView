@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "sun_photoAlbums.h"
 
 @interface sun_photoAlbumCell : UICollectionViewCell<UIScrollViewDelegate>
 
